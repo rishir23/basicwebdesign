@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .menu {
+      width: 400px;
+      height: 550px;
+      border: 3px solid #333;
+      padding: 20px;
+      margin: 10px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: white;
+      text-shadow: 1px 1px 2px #000;
+      overflow-y: auto;
+    }
+
+    .menu h2 {
+      text-align: center;
+      border-bottom: 2px solid white;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+    }
+
+    .menu ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .menu ul li {
+      margin: 10px 0;
+    }
+
+    /* Backgrounds */
+    #breakfast {
+      background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836');
+    }
+
+    #lunch {
+      background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092');
+    }
+
+    #dinner {
+      background-image: url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1');
+    }
+  </style>
+</head>
+<body>
+  <div class="menu" id="breakfast">
+    <h2>Breakfast Menu</h2>
+    <ul>
+      <li>Pancakes - $5.99</li>
+      <li>Omelette - $6.49</li>
+      <li>French Toast - $6.99</li>
+      <li>Fruit Bowl - $4.99</li>
+    </ul>
+  </div>
+
+  <div class="menu" id="lunch">
+    <h2>Lunch Menu</h2>
+    <ul>
+      <li>Cheeseburger - $8.99</li>
+      <li>Grilled Chicken Wrap - $7.99</li>
+      <li>Caesar Salad - $6.99</li>
+      <li>Tomato Soup - $5.49</li>
+    </ul>
+  </div>
+
+  <div class="menu" id="dinner">
+    <h2>Dinner Menu</h2>
+    <ul>
+      <li>Steak - $14.99</li>
+      <li>Spaghetti Bolognese - $12.49</li>
+      <li>Grilled Salmon - $13.99</li>
+      <li>Vegetable Stir Fry - $10.99</li>
+    </ul>
+  </div>
+</body>
+</html>
