@@ -1,0 +1,73 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex & Grid Puzzle</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-rows: auto auto auto 1fr;
+      gap: 10px;
+    }
+
+    header, .puzzle-name, .date {
+      background-color: #f0f0f0;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .puzzle-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 20px;
+      background-color: #fafafa;
+    }
+
+    .piece {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      border: 1px solid #ccc;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Name Section -->
+  <header>
+    <h1>Arjun</h1>
+  </header>
+
+  <!-- Puzzle Name Section -->
+  <div class="puzzle-name">
+    <h2>Fish Puzzle</h2>
+  </div>
+
+  <!-- Date Section -->
+  <div class="date">
+    <p>Completed: July 19, 2025</p>
+  </div>
+
+  <!-- Puzzle Flexbox Section -->
+  <div class="puzzle-container">
+    <img src="images/fish1.png" alt="piece 1" class="piece">
+    <img src="images/fish2.png" alt="piece 2" class="piece">
+    <img src="images/fish3.png" alt="piece 3" class="piece">
+    <img src="images/fish4.png" alt="piece 4" class="piece">
+    <img src="images/fish5.png" alt="piece 5" class="piece">
+    <img src="images/fish6.png" alt="piece 6" class="piece">
+    <img src="images/fish7.png" alt="piece 7" class="piece">
+    <img src="images/fish8.png" alt="piece 8" class="piece">
+    <img src="images/fish-wrong.png" alt="wrong piece" class="piece hidden">
+  </div>
+</body>
+</html>
