@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Awesome Team</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* Navigation bar */
+    .navbar {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      position: fixed; /* using position */
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .navbar a {
+      color: white;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+
+    .team-container {
+      margin-top: 70px; /* so content isn't hidden under nav */
+    }
+
+    .team-member {
+      width: 45%;
+      float: left; /* using float */
+      margin: 2.5%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .team-member img {
+      width: 100%;
+      height: auto;
+    }
+
+    .clear {
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Our Team</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <!-- Team Section -->
+  <div class="team-container">
+    <div class="team-member">
+      <img src="member1.jpg" alt="Team Member 1">
+      <h3>Alex</h3>
+      <p>Alex is a creative designer who loves color and layout.</p>
+    </div>
+
+    <div class="team-member">
+      <img src="member2.jpg" alt="Team Member 2">
+      <h3>Taylor</h3>
+      <p>Taylor codes in 5 languages and leads backend dev.</p>
+    </div>
+
+    <div class="team-member">
+      <img src="member3.jpg" alt="Team Member 3">
+      <h3>Jordan</h3>
+      <p>Jordan organizes team tasks and manages projects.</p>
+    </div>
+
+    <div class="team-member">
+      <img src="member4.jpg" alt="Team Member 4">
+      <h3>Sam</h3>
+      <p>Sam is our UX expert and loves making things usable.</p>
+    </div>
+
+    <div class="clear"></div>
+  </div>
+
+</body>
+</html>
