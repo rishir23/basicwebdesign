@@ -20,20 +20,22 @@
       text-align: center;
     }
 
-    .puzzle-container {
+    .puzzle-wrapper {
       display: flex;
-      flex-wrap: wrap;
-      width: fit-content;
-      gap: 0;
-      margin: 0 auto;
+      justify-content: center;
       padding: 20px;
+    }
+
+    .puzzle-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 0;
       background-color: #fff;
     }
 
     .piece {
-      object-fit: cover;
-      border: 1px solid #ccc;
       display: block;
+      border: 1px solid #ccc;
     }
 
     .hidden {
@@ -57,22 +59,24 @@
     <p>Completed: July 19, 2025</p>
   </div>
 
-  <!-- Puzzle Flexbox Section -->
-  <div class="puzzle-container">
-    <img src="puz/puzzle3_D.jpg" alt="Piece D" class="piece">
-    <img src="puz/puzzle3_A.jpg" alt="Piece A" class="piece">
-    <img src="puz/puzzle3_G.jpg" alt="Piece G" class="piece">
+  <!-- Puzzle Grid Inside Flex Container -->
+  <div class="puzzle-wrapper">
+    <div class="puzzle-container">
+      <img src="puz/puzzle3_D.jpg" alt="Piece D" class="piece">
+      <img src="puz/puzzle3_A.jpg" alt="Piece A" class="piece">
+      <img src="puz/puzzle3_G.jpg" alt="Piece G" class="piece">
 
-    <img src="puz/puzzle3_J.jpg" alt="Piece J" class="piece">
-    <img src="puz/puzzle3_B.jpg" alt="Piece B" class="piece">
-    <img src="puz/puzzle3_C.jpg" alt="Piece C" class="piece">
+      <img src="puz/puzzle3_J.jpg" alt="Piece J" class="piece">
+      <img src="puz/puzzle3_B.jpg" alt="Piece B" class="piece">
+      <img src="puz/puzzle3_C.jpg" alt="Piece C" class="piece">
 
-    <img src="puz/puzzle3_F.jpg" alt="Piece F" class="piece">
-    <img src="puz/puzzle3_I.jpg" alt="Piece I" class="piece">
-    <img src="puz/puzzle3_E.jpg" alt="Piece E" class="piece">
+      <img src="puz/puzzle3_F.jpg" alt="Piece F" class="piece">
+      <img src="puz/puzzle3_I.jpg" alt="Piece I" class="piece">
+      <img src="puz/puzzle3_E.jpg" alt="Piece E" class="piece">
 
-    <!-- Hidden faulty piece -->
-    <img src="puz/puzzle3_H.jpg" alt="Faulty Piece" class="piece hidden">
+      <!-- Hidden faulty piece -->
+      <img src="puz/puzzle3_H.jpg" alt="Faulty Piece" class="piece hidden">
+    </div>
   </div>
 </body>
 </html>
