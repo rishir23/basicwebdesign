@@ -11,6 +11,7 @@
       display: grid;
       grid-template-rows: auto auto auto 1fr;
       gap: 10px;
+      background-color: #f9f9f9;
     }
 
     header, .puzzle-name, .date {
@@ -20,12 +21,12 @@
     }
 
     .puzzle-container {
-      display: grid;
-      grid-template-columns: repeat(4, 100px);
-      gap: 10px;
+      display: flex;
+      flex-wrap: wrap;
       justify-content: center;
+      gap: 10px;
       padding: 20px;
-      background-color: #fafafa;
+      background-color: #fff;
     }
 
     .piece {
@@ -56,21 +57,23 @@
     <p>Completed: July 19, 2025</p>
   </div>
 
-  <!-- Puzzle Grid Section -->
+  <!-- Puzzle Flexbox Section (Correct Order) -->
   <div class="puzzle-container">
     <img src="puz/puzzle3_A.jpg" alt="Piece A" class="piece">
     <img src="puz/puzzle3_B.jpg" alt="Piece B" class="piece">
     <img src="puz/puzzle3_C.jpg" alt="Piece C" class="piece">
     <img src="puz/puzzle3_D.jpg" alt="Piece D" class="piece">
+
     <img src="puz/puzzle3_E.jpg" alt="Piece E" class="piece">
     <img src="puz/puzzle3_F.jpg" alt="Piece F" class="piece">
     <img src="puz/puzzle3_G.jpg" alt="Piece G" class="piece">
     <img src="puz/puzzle3_H.jpg" alt="Piece H" class="piece">
+
     <img src="puz/puzzle3_I.jpg" alt="Piece I" class="piece">
     <img src="puz/puzzle3_J.jpg" alt="Piece J" class="piece">
 
-    <!-- Hidden faulty piece -->
-    <img src="puz/puzzle3_K.jpg" alt="Faulty Piece K" class="piece hidden">
+    <!-- Faulty piece hidden -->
+    <img src="puz/puzzle3_K.jpg" alt="Faulty Piece" class="piece hidden">
   </div>
 </body>
 </html>
