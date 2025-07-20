@@ -23,8 +23,9 @@
     .puzzle-container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      width: 330px; /* 3x 100px + 2x 10px gap */
       gap: 10px;
+      margin: 0 auto;
       padding: 20px;
       background-color: #fff;
     }
@@ -57,23 +58,22 @@
     <p>Completed: July 19, 2025</p>
   </div>
 
-  <!-- Puzzle Flexbox Section (Correct Order) -->
+  <!-- Puzzle Flexbox Section -->
   <div class="puzzle-container">
+    <img src="puz/puzzle3_D.jpg" alt="Piece D" class="piece">
     <img src="puz/puzzle3_A.jpg" alt="Piece A" class="piece">
+    <img src="puz/puzzle3_G.jpg" alt="Piece G" class="piece">
+
+    <img src="puz/puzzle3_J.jpg" alt="Piece J" class="piece">
     <img src="puz/puzzle3_B.jpg" alt="Piece B" class="piece">
     <img src="puz/puzzle3_C.jpg" alt="Piece C" class="piece">
-    <img src="puz/puzzle3_D.jpg" alt="Piece D" class="piece">
 
-    <img src="puz/puzzle3_E.jpg" alt="Piece E" class="piece">
     <img src="puz/puzzle3_F.jpg" alt="Piece F" class="piece">
-    <img src="puz/puzzle3_G.jpg" alt="Piece G" class="piece">
-    <img src="puz/puzzle3_H.jpg" alt="Piece H" class="piece">
-
     <img src="puz/puzzle3_I.jpg" alt="Piece I" class="piece">
-    <img src="puz/puzzle3_J.jpg" alt="Piece J" class="piece">
+    <img src="puz/puzzle3_E.jpg" alt="Piece E" class="piece">
 
-    <!-- Faulty piece hidden -->
-    <img src="puz/puzzle3_K.jpg" alt="Faulty Piece" class="piece hidden">
+    <!-- Hidden faulty piece -->
+    <img src="puz/puzzle3_H.jpg" alt="Faulty Piece" class="piece hidden">
   </div>
 </body>
 </html>
