@@ -1,0 +1,107 @@
+<!-- scorecard1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basketball Scorecard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🏀 Basketball Scorecard</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Round</th>
+        <th>Team A</th>
+        <th>Team B</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>22</td><td>18</td></tr>
+      <tr><td>2</td><td>24</td><td>21</td></tr>
+      <tr><td>3</td><td>19</td><td>20</td></tr>
+    </tbody>
+  </table>
+</body>
+</html>
+
+<!-- scorecard2.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bowling Scorecard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎳 Bowling Scorecard</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Frame</th>
+        <th>Player 1</th>
+        <th>Player 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>9</td><td>7</td></tr>
+      <tr><td>2</td><td>8</td><td>10</td></tr>
+      <tr><td>3</td><td>10</td><td>6</td></tr>
+    </tbody>
+  </table>
+</body>
+</html>
+
+<!-- scorecard3.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Soccer Scorecard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>⚽ Soccer Scorecard</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Half</th>
+        <th>Team Red</th>
+        <th>Team Blue</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>1</td><td>0</td></tr>
+      <tr><td>2</td><td>1</td><td>1</td></tr>
+    </tbody>
+  </table>
+</body>
+</html>
+
+/* style.css */
+body {
+  font-family: sans-serif;
+  background: #f0f0f0;
+  padding: 20px;
+}
+table {
+  border-collapse: collapse;
+  width: 60%;
+  margin-bottom: 40px;
+}
+th, td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: center;
+}
+th {
+  background-color: #444;
+  color: #fff;
+}
+tr:nth-child(even) {
+  background-color: #ddd;
+}
+h1::before {
+  content: "★ ";
+  color: orange;
+}
