@@ -23,18 +23,17 @@
     .puzzle-container {
       display: flex;
       flex-wrap: wrap;
-      width: 330px; /* 3 * 100px + 2 * 10px gap */
-      gap: 0px;
+      width: fit-content;
+      gap: 0;
       margin: 0 auto;
       padding: 20px;
       background-color: #fff;
     }
 
     .piece {
-      width: 100px;
-      height: 100px;
       object-fit: cover;
       border: 1px solid #ccc;
+      display: block;
     }
 
     .hidden {
