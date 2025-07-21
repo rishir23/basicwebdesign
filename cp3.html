@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS3 Imitation Assignment</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+    .image-box {
+      width: 250px;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+      border: 2px solid #ccc;
+      background: white;
+    }
+    /* Penguins - circle crop */
+    .penguins img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 5px solid white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    /* Football field with overlay */
+    .field {
+      position: relative;
+    }
+    .field img {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .field .overlay {
+      z-index: 2;
+      opacity: 0.9;
+    }
+    .field .background {
+      z-index: 1;
+    }
+
+    /* Dinosaur - hue rotation */
+    .dino img {
+      width: 200px;
+      filter: hue-rotate(200deg);
+    }
+
+    /* Seagull - shadow and border */
+    .seagull img {
+      width: 100%;
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+      border: 3px solid #ccc;
+    }
+
+    /* Butterfly - blurred background */
+    .butterfly {
+      position: relative;
+    }
+    .butterfly::before {
+      content: "";
+      background: url('butterfly.jpg') no-repeat center/cover;
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      filter: blur(8px);
+      z-index: 0;
+    }
+    .butterfly img {
+      position: relative;
+      z-index: 1;
+      width: 200px;
+    }
+
+    /* Theater stage - text overlay */
+    .presenting {
+      text-align: center;
+    }
+    .presenting img {
+      width: 100%;
+    }
+    .presenting h2 {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0,0,0,0.6);
+      color: white;
+      padding: 5px 15px;
+      font-size: 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="image-box penguins">
+    <img src="penguins.jpg" alt="Penguins">
+  </div>
+
+  <div class="image-box field">
+    <img src="football_field.jpg" class="background" alt="Field">
+    <img src="tic-tac-toe.png" class="overlay" alt="Overlay">
+  </div>
+
+  <div class="image-box dino">
+    <img src="dinosaur.png" alt="Dino">
+  </div>
+
+  <div class="image-box seagull">
+    <img src="seagull.png" alt="Seagull">
+  </div>
+
+  <div class="image-box butterfly">
+    <img src="butterfly.jpg" alt="Butterfly">
+  </div>
+
+  <div class="image-box presenting">
+    <img src="theater_stage.jpg" alt="Stage">
+    <h2>Presenting</h2>
+  </div>
+</body>
+</html>
