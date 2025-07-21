@@ -1,1 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color: #0077cc; /* Blue background */
+  color: #fff;
+}
 
+h1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+section {
+  background-color: white;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+img {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+}
