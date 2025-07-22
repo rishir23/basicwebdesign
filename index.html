@@ -1,31 +1,111 @@
-<html>
-  <body>
-    <h1>Rishis Webdesign projects</h1>
-    <p></p>
-<a href="project2/index.html">Project 2</a>
-     <p></p>
-    <a href="table.html">Project 3</a>
-     <p></p>
-    <a href="math.html">Project 4</a>
-     <p></p>
-    <a href="color.html">Project 5</a>
-     <p></p>
-    <a href="food.html">Project 6</a>
-     <p></p>
-    <a href="sked.html">Project 7</a>
-     <p></p>
-    <a href="float.html">Project 8</a>
-     <p></p>
-    <a href="puz.html">Project 9</a>
-     <p></p>
-    <a href="bball.html">Project 10</a>
-    <p></p>
-    <a href="bowl.html">Project 11</a>
-    <p></p>
-    <a href="sock.html">Project 12</a>
-     <p></p>
-    <a href="video.html">Project 13</a>
-      <p></p>
-    <a href="cp3.html">Project 14</a>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Image Grid</title>
+  <style>
+    body {
+      background: #f2f2f2;
+      font-family: sans-serif;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+    .img-box {
+      background: white;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .oval {
+      border-radius: 50%;
+      filter: sepia(0.5);
+    }
+    .butterfly {
+      filter: invert(1);
+    }
+    .theater {
+      filter: blur(3px);
+    }
+    .seagull-container {
+      position: relative;
+    }
+    .seagull-shadow {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      height: 10px;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 50%;
+      z-index: 0;
+    }
+    .seagull {
+      position: relative;
+      z-index: 1;
+    }
+    .football {
+      position: relative;
+    }
+    .tic-tac {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      mix-blend-mode: multiply;
+    }
+    .field {
+      width: 100%;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <!-- Penguins with yellow tint and oval -->
+    <div class="img-box">
+      <img src="puz/penguins.jpg" class="oval" alt="Penguins">
+    </div>
+
+    <!-- Football field with X/O overlay -->
+    <div class="img-box football">
+      <img src="puz/football_field.jpg" class="field" alt="Football field">
+      <img src="puz/tic_tac_toe.png" class="tic-tac" alt="Tic Tac Toe overlay">
+    </div>
+
+    <!-- Blue dinosaur -->
+    <div class="img-box">
+      <img src="puz/blue_dinosaur.png" alt="Blue Dinosaur">
+    </div>
+
+    <!-- Seagull with shading -->
+    <div class="img-box seagull-container">
+      <div class="seagull-shadow"></div>
+      <img src="puz/seagull.png" class="seagull" alt="Seagull">
+    </div>
+
+    <!-- Inverted butterfly -->
+    <div class="img-box">
+      <img src="puz/butterfly.jpg" class="butterfly" alt="Inverted Butterfly">
+    </div>
+
+    <!-- Blurry theater -->
+    <div class="img-box">
+      <img src="puz/theater.jpg" class="theater" alt="Blurry Theater">
+    </div>
+  </div>
+</body>
 </html>
