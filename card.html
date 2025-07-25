@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Review Cards Activity</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f8ff;
+      margin: 0;
+      padding: 0;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px;
+      background: #4682b4;
+      color: white;
+      margin: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      background-color: #e6f2ff;
+    }
+
+    .answer {
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+      transition: opacity 0.5s ease, height 0.5s ease;
+    }
+
+    .card:hover .answer {
+      opacity: 1;
+      height: auto;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Review Cards: Important Terms</h1>
+
+  <div class="grid">
+    <div class="card">
+      <strong>What is HTML?</strong>
+      <div class="answer">HTML stands for HyperText Markup Language.</div>
+    </div>
+    <div class="card">
+      <strong>What is CSS?</strong>
+      <div class="answer">CSS stands for Cascading Style Sheets. It styles HTML.</div>
+    </div>
+    <div class="card">
+      <strong>What does the <code>&lt;div&gt;</code> tag do?</strong>
+      <div class="answer">It defines a container or section in HTML.</div>
+    </div>
+    <div class="card">
+      <strong>What is a CSS transition?</strong>
+      <div class="answer">It creates smooth changes between CSS property values.</div>
+    </div>
+    <div class="card">
+      <strong>What is GitHub used for?</strong>
+      <div class="answer">It hosts code and tracks changes using Git.</div>
+    </div>
+    <div class="card">
+      <strong>How do you apply a class in HTML?</strong>
+      <div class="answer">Using <code>class="classname"</code> inside a tag.</div>
+    </div>
+    <div class="card">
+      <strong>What does <code>hover</code> mean in CSS?</strong>
+      <div class="answer">It targets an element when the mouse is over it.</div>
+    </div>
+    <div class="card">
+      <strong>What does <code>opacity</code> control?</strong>
+      <div class="answer">It controls how transparent an element is (0 = invisible, 1 = solid).</div>
+    </div>
+  </div>
+</body>
+</html>
