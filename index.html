@@ -22,17 +22,47 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      position: relative;
     }
-    .oval {
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Penguins: Oval + yellow tint */
+    .oval-yellow {
       border-radius: 50%;
-      filter: sepia(0.5);
+      filter: sepia(1) brightness(1.1);
+      aspect-ratio: 1/1;
+      object-fit: cover;
     }
-    .butterfly {
-      filter: invert(1);
+
+    /* Football with tic-tac-toe overlay */
+    .football {
+      position: relative;
     }
-    .theater {
-      filter: blur(3px);
+    .tic-tac {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      mix-blend-mode: multiply;
+      pointer-events: none;
     }
+    .field {
+      width: 100%;
+      display: block;
+    }
+
+    /* Blue-tinted dinosaur */
+    .blue-dino {
+      filter: hue-rotate(200deg) saturate(2);
+    }
+
+    /* Seagull with drop shadow */
     .seagull-container {
       position: relative;
     }
@@ -51,58 +81,51 @@
       position: relative;
       z-index: 1;
     }
-    .football {
-      position: relative;
-    }
-    .tic-tac {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+
+    /* Inverted + oval butterfly */
+    .butterfly {
+      filter: invert(1) hue-rotate(180deg);
+      border-radius: 50%;
+      aspect-ratio: 1/1;
       object-fit: cover;
-      mix-blend-mode: multiply;
     }
-    .field {
-      width: 100%;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
+
+    /* Blurry theater */
+    .theater {
+      filter: blur(3px);
     }
   </style>
 </head>
 <body>
   <div class="grid">
-    <!-- Penguins with yellow tint and oval -->
+    <!-- Penguins -->
     <div class="img-box">
-      <img src="puz/penguins.jpg" class="oval" alt="Penguins">
+      <img src="puz/penguins.jpg" class="oval-yellow" alt="Penguins">
     </div>
 
-    <!-- Football field with X/O overlay -->
+    <!-- Football field with overlay -->
     <div class="img-box football">
       <img src="puz/football_field.jpg" class="field" alt="Football field">
       <img src="puz/tic-tac-toe.png" class="tic-tac" alt="Tic Tac Toe overlay">
     </div>
 
-    <!-- Blue dinosaur -->
+    <!-- Blue Dinosaur -->
     <div class="img-box">
-      <img src="puz/dinosaur.png" alt="Blue Dinosaur">
+      <img src="puz/dinosaur.png" class="blue-dino" alt="Blue Dinosaur">
     </div>
 
-    <!-- Seagull with shading -->
+    <!-- Seagull with shadow -->
     <div class="img-box seagull-container">
       <div class="seagull-shadow"></div>
       <img src="puz/seagull.png" class="seagull" alt="Seagull">
     </div>
 
-    <!-- Inverted butterfly -->
+    <!-- Inverted Butterfly -->
     <div class="img-box">
       <img src="puz/butterfly.jpg" class="butterfly" alt="Inverted Butterfly">
     </div>
 
-    <!-- Blurry theater -->
+    <!-- Blurry Theater -->
     <div class="img-box">
       <img src="puz/theater_stage.jpg" class="theater" alt="Blurry Theater">
     </div>
