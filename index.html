@@ -24,13 +24,24 @@
       justify-content: center;
       position: relative;
     }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Penguins */
     .oval {
       border-radius: 50%;
       filter: sepia(0.5);
     }
+
+    /* Butterfly */
     .butterfly {
       filter: invert(1);
     }
+
+    /* Theater */
     .theater {
       filter: blur(3px);
     }
@@ -41,8 +52,10 @@
       font-weight: bold;
       text-shadow: 2px 2px 5px black;
     }
+
+    /* Seagull */
     .seagull-container {
-      background: #bcdfff; /* light blue background */
+      background: #bcdfff;
       position: relative;
     }
     .seagull-shadow {
@@ -60,9 +73,13 @@
       position: relative;
       z-index: 1;
     }
+
+    /* Blue Dinosaur */
     .blue-dino {
-      filter: hue-rotate(185deg) saturate(2) brightness(1.1);
+      filter: hue-rotate(195deg) saturate(2.5) brightness(1.2);
     }
+
+    /* Football X/O Border */
     .football-border {
       display: flex;
       flex-direction: column;
@@ -78,24 +95,22 @@
       width: 20px;
       height: 20px;
     }
+
+    /* Black & White Football Field */
     .field {
       width: 100%;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
+      filter: grayscale(1);
     }
   </style>
 </head>
 <body>
   <div class="grid">
-    <!-- Penguins with yellow tint and oval -->
+    <!-- Penguins -->
     <div class="img-box">
       <img src="puz/penguins.jpg" class="oval" alt="Penguins">
     </div>
 
-    <!-- Football field with X/O border -->
+    <!-- Football with X/O border and grayscale -->
     <div class="img-box football-border">
       <div class="xo-row">
         <img src="puz/x.png" alt="X">
@@ -114,25 +129,25 @@
       </div>
     </div>
 
-    <!-- Blue dinosaur -->
+    <!-- True Blue Dinosaur -->
     <div class="img-box">
       <img src="puz/dinosaur.png" class="blue-dino" alt="Blue Dinosaur">
     </div>
 
-    <!-- Seagull with blue background and shadow -->
+    <!-- Seagull with blue background -->
     <div class="img-box seagull-container">
       <div class="seagull-shadow"></div>
       <img src="puz/seagull.png" class="seagull" alt="Seagull">
     </div>
 
-    <!-- Inverted butterfly -->
+    <!-- Butterfly -->
     <div class="img-box">
-      <img src="puz/butterfly.jpg" class="butterfly" alt="Inverted Butterfly">
+      <img src="puz/butterfly.jpg" class="butterfly" alt="Butterfly">
     </div>
 
-    <!-- Blurry theater with "Presenting" text -->
+    <!-- Theater with Presenting text -->
     <div class="img-box">
-      <img src="puz/theater_stage.jpg" class="theater" alt="Blurry Theater">
+      <img src="puz/theater_stage.jpg" class="theater" alt="Theater">
       <div class="presenting-text">Presenting</div>
     </div>
   </div>
