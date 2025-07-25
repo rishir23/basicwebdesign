@@ -36,10 +36,10 @@
       filter: sepia(0.5);
     }
 
-    /* ✅ Butterfly with oval edge and purple-blue tint */
+    /* ✅ Butterfly with same filter but soft oval crop */
     .butterfly {
-      filter: hue-rotate(260deg) saturate(1.2) brightness(1.1);
-      border-radius: 50% / 30%;
+      filter: invert(1);
+      border-radius: 50% / 30%; /* Soft horizontal oval corners */
       object-fit: cover;
     }
 
@@ -76,7 +76,7 @@
       z-index: 1;
     }
 
-    /* ✅ Blue Dinosaur */
+    /* Blue Dinosaur */
     .blue-dino {
       filter: grayscale(1) brightness(1.1) sepia(1) hue-rotate(190deg) saturate(8);
     }
@@ -98,7 +98,7 @@
       height: 20px;
     }
 
-    /* ✅ Black & White Football Field */
+    /* Black & White Football Field */
     .field {
       width: 100%;
       filter: grayscale(1);
@@ -131,7 +131,7 @@
       </div>
     </div>
 
-    <!-- ✅ Blue Dinosaur -->
+    <!-- Blue Dinosaur -->
     <div class="img-box">
       <img src="puz/dinosaur.png" class="blue-dino" alt="Blue Dinosaur">
     </div>
@@ -142,7 +142,7 @@
       <img src="puz/seagull.png" class="seagull" alt="Seagull">
     </div>
 
-    <!-- ✅ Butterfly with perfect shape and tone -->
+    <!-- ✅ Butterfly with same effect, oval shape only -->
     <div class="img-box">
       <img src="puz/butterfly.jpg" class="butterfly" alt="Butterfly">
     </div>
