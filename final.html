@@ -3,97 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Final Project Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background-color: #f3f3f3;
-    }
-    header {
-      background-color: #333;
-      color: white;
-      padding: 15px;
-      text-align: center;
-    }
-    section {
-      background: white;
-      padding: 20px;
-      margin-top: 20px;
-      border-radius: 8px;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-    iframe, video {
-      width: 100%;
-      height: 315px;
-      margin-top: 10px;
-      border-radius: 8px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 8px;
-      text-align: left;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-top: 20px;
-    }
-    input, textarea {
-      padding: 8px;
-      width: 100%;
-    }
-    ul {
-      margin-left: 20px;
-    }
-  </style>
+  <title>Volunteer Club</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <header>
-    <h1>Welcome to My Final Project Website!</h1>
+    <h1>North Creek Volunteer Club</h1>
+    <p>Making a difference together</p>
   </header>
 
   <section>
-    <h2>About Our Group</h2>
-    <p>This website represents a volunteer group that helps clean up local parks and raise awareness about environmental conservation.</p>
-    <img src="group-photo.jpg" alt="Volunteer group" />
+    <h2>Welcome</h2>
+    <p>We are a group of students dedicated to helping our community through volunteer events, support drives, and more.</p>
+    <img src="group-photo.jpg" alt="Group of students volunteering">
   </section>
 
   <section>
     <h2>Our Activities</h2>
     <ul>
-      <li>Weekly park cleanups</li>
-      <li>Tree planting events</li>
-      <li>Educational workshops</li>
+      <li>Food Bank Sorting</li>
+      <li>Park Clean-Ups</li>
+      <li>Fundraising for Local Shelters</li>
+      <li>Holiday Gift Wrapping</li>
     </ul>
-    <img src="activity-photo.jpg" alt="Volunteers in action" />
+    <img src="activity-photo.jpg" alt="Students cleaning up a park">
   </section>
 
   <section>
     <h2>Watch Our Video</h2>
-    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Our Volunteer Group Video" allowfullscreen></iframe>
-  </section>
-
-  <section>
-    <h2>Volunteer Signup Form</h2>
-    <form>
-      <input type="text" placeholder="Full Name" required />
-      <input type="email" placeholder="Email Address" required />
-      <textarea placeholder="Why do you want to volunteer?" rows="4" required></textarea>
-      <input type="submit" value="Submit" />
-    </form>
+    <iframe 
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+      title="Volunteer Recap Video" 
+      frameborder="0" 
+      allowfullscreen>
+    </iframe>
   </section>
 
   <section>
@@ -101,32 +45,49 @@
     <table>
       <thead>
         <tr>
-          <th>Volunteer Name</th>
-          <th>Event</th>
-          <th>Hours</th>
+          <th>Name</th>
+          <th>Hours This Month</th>
+          <th>Total Hours</th>
+          <th>Favorite Activity</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Ava Chen</td>
-          <td>Park Cleanup - July</td>
-          <td>4</td>
+          <td>Alex Kim</td>
+          <td>12</td>
+          <td>45</td>
+          <td>Food Bank</td>
         </tr>
         <tr>
-          <td>Jay Patel</td>
-          <td>Tree Planting</td>
-          <td>3</td>
+          <td>Jordan Lee</td>
+          <td>15</td>
+          <td>60</td>
+          <td>Park Clean-Up</td>
+        </tr>
+        <tr>
+          <td>Riya Patel</td>
+          <td>10</td>
+          <td>38</td>
+          <td>Holiday Wrapping</td>
         </tr>
       </tbody>
     </table>
   </section>
 
   <section>
-    <h2>Useful Links</h2>
-    <ul>
-      <li><a href="https://www.epa.gov/environmental-topics/environmental-education" target="_blank">Environmental Education Resources</a></li>
-      <li><a href="https://www.nps.gov" target="_blank">National Park Service</a></li>
-    </ul>
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
   </section>
 
 </body>
