@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Final Project - Community Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to Helping Hands Community Club</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Our Mission</h2>
+      <p>We are a group of high school students supporting local food banks and organizing community clean-up events.</p>
+    </section>
+
+    <section>
+      <h2>Meet the Team</h2>
+      <img src="images/team.jpg" alt="Group photo of student volunteers" />
+      <p>Our team includes students from grades 9–12, all passionate about giving back.</p>
+    </section>
+
+    <section>
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li>Park Clean-Up – August 10</li>
+        <li>Food Drive – August 15</li>
+        <li>Recycling Workshop – August 22</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Volunteer Sign-Up</h2>
+      <form action="submit-form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="interest">Area of Interest:</label>
+        <select id="interest" name="interest">
+          <option value="cleanup">Community Clean-Up</option>
+          <option value="food">Food Bank</option>
+          <option value="recycling">Recycling</option>
+        </select>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Useful Links</h2>
+      <ul>
+        <li><a href="https://www.feedingamerica.org" target="_blank">Feeding America</a></li>
+        <li><a href="https://www.earthday.org" target="_blank">Earth Day Organization</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Volunteer Stats</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Month</th>
+            <th>Volunteers</th>
+            <th>Hours Contributed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>June</td>
+            <td>25</td>
+            <td>120</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>30</td>
+            <td>160</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Watch Us in Action</h2>
+      <video controls>
+        <source src="media/community_event.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Helping Hands Community Club</p>
+  </footer>
+</body>
+</html>
