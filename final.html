@@ -1,117 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Website Project Requirements</title>
-  <link rel="stylesheet" href="final.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartStart Tutoring</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <header>
-    <h1>Choose a Website Audience</h1>
-    <section class="audience-grid">
-      <figure>
-        <img src="images/small-business.jpg" alt="A small business owner">
-        <figcaption>A small business owned by someone you know</figcaption>
-      </figure>
-      <figure>
-        <img src="images/club.jpg" alt="A club you belong to">
-        <figcaption>A sports or other club you belong</figcaption>
-      </figure>
-      <figure>
-        <img src="images/organization.jpg" alt="A community organization">
-        <figcaption>A community organization</figcaption>
-      </figure>
-      <figure>
-        <img src="images/family.jpg" alt="A family trip">
-        <figcaption>Family or nearby trip/vacation</figcaption>
-      </figure>
-    </section>
+    <h1>SmartStart Tutoring</h1>
+    <p>Your path to academic success starts here!</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="subjects.html">Subjects</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
+  <section class="hero">
+    <img src="images/tutoring-session.jpg" alt="Student and tutor working together">
+    <p>One-on-one tutoring for math, science, English, and more — in-person or online!</p>
+  </section>
+
   <main>
-    <p>As you can see, you have a great deal of freedom in selecting your website's focus. However, the topic you choose should be "rich" or detailed enough to produce content for the different pages it needs to show in the final site.</p>
-    
-    <section class="category" id="general">
-      <h2>General</h2>
+    <section class="features">
+      <h2>Why Choose Us?</h2>
       <ul>
-        <li>At least five additional pages (6 total), all styled using external CSS and made accessible to all audiences.</li>
-        <li>Pages should include internal links and use at least five additional pages.</li>
-        <li>Use headings, layout divisions, and semantic elements.</li>
-        <li>Design should be search-engine friendly.</li>
+        <li>Certified, experienced tutors</li>
+        <li>Flexible scheduling and online options</li>
+        <li>Customized learning plans for each student</li>
       </ul>
     </section>
 
-    <section class="category" id="images">
-      <h2>Images</h2>
-      <ul>
-        <li>At least one image or graphic on every page, optimized for web with captions and alt text.</li>
-      </ul>
-    </section>
-
-    <section class="category" id="lists">
-      <h2>Lists</h2>
-      <ul>
-        <li>At least one list, styled with CSS classes and organized clearly.</li>
-        <li>Use classes to style and improve readability and appearance.</li>
-      </ul>
-    </section>
-
-    <section class="category" id="tables">
-      <h2>Tables</h2>
+    <section class="table-section">
+      <h2>Pricing Plans</h2>
       <table>
-        <caption>Example Table</caption>
         <thead>
           <tr>
-            <th>Page</th>
-            <th>Requirement</th>
+            <th>Plan</th>
+            <th>Sessions/Week</th>
+            <th>Monthly Price</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Images</td>
-            <td>1 image per page with alt + caption</td>
+            <td>Basic</td>
+            <td>1</td>
+            <td>$120</td>
           </tr>
           <tr>
-            <td>Lists</td>
-            <td>Use simple, styled lists with headings</td>
+            <td>Standard</td>
+            <td>2</td>
+            <td>$220</td>
+          </tr>
+          <tr>
+            <td>Premium</td>
+            <td>Unlimited</td>
+            <td>$399</td>
           </tr>
         </tbody>
       </table>
     </section>
 
-    <section class="category" id="forms">
-      <h2>Forms</h2>
+    <section class="form-section">
+      <h2>Free Trial Sign-Up</h2>
       <form>
-        <label for="email">Subscribe:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        <br>
-        <label for="feedback">Feedback:</label>
-        <textarea id="feedback" name="feedback" placeholder="Your feedback..."></textarea>
-        <br>
-        <button type="submit">Send</button>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" required>
+
+        <label for="subject">Subject of Interest:</label>
+        <input type="text" id="subject">
+
+        <button type="submit">Start Free Trial</button>
       </form>
     </section>
 
-    <section class="category" id="links">
-      <h2>Links</h2>
-      <ul>
-        <li><a href="page2.html">Internal Link Example</a></li>
-        <li><a href="https://www.example.com" target="_blank" rel="noopener">External Link Example</a></li>
-      </ul>
-    </section>
-
-    <section class="category" id="multimedia">
-      <h2>Multimedia</h2>
-      <video controls width="300">
-        <source src="media/sample.mp4" type="video/mp4">
+    <section class="video">
+      <h2>What Our Students Say</h2>
+      <video controls width="400">
+        <source src="media/testimonial.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </section>
   </main>
 
   <footer>
-    <p>Make sure to include all requirements and upload your project to GitHub before submitting.</p>
+    <p>© 2025 SmartStart Tutoring. <a href="https://www.smartstarttutoring.com" target="_blank">Visit Full Site</a></p>
   </footer>
 </body>
 </html>
