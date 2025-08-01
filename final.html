@@ -1,94 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Volunteer Club</title>
-  <link rel="stylesheet" href="final.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website Project Requirements</title>
+  <link rel="stylesheet" href="final.css">
 </head>
 <body>
-
   <header>
-    <h1>North Creek Volunteer Club</h1>
-    <p>Making a difference together</p>
+    <h1>Choose a Website Audience</h1>
+    <section class="audience-grid">
+      <figure>
+        <img src="images/small-business.jpg" alt="A small business owner">
+        <figcaption>A small business owned by someone you know</figcaption>
+      </figure>
+      <figure>
+        <img src="images/club.jpg" alt="A club you belong to">
+        <figcaption>A sports or other club you belong</figcaption>
+      </figure>
+      <figure>
+        <img src="images/organization.jpg" alt="A community organization">
+        <figcaption>A community organization</figcaption>
+      </figure>
+      <figure>
+        <img src="images/family.jpg" alt="A family trip">
+        <figcaption>Family or nearby trip/vacation</figcaption>
+      </figure>
+    </section>
   </header>
 
-  <section>
-    <h2>Welcome</h2>
-    <p>me and my firends are here to help tutor people in need</p>
-    <img src="group-photo.jpg" alt="Group of students volunteering">
-  </section>
+  <main>
+    <p>As you can see, you have a great deal of freedom in selecting your website's focus. However, the topic you choose should be "rich" or detailed enough to produce content for the different pages it needs to show in the final site.</p>
+    
+    <section class="category" id="general">
+      <h2>General</h2>
+      <ul>
+        <li>At least five additional pages (6 total), all styled using external CSS and made accessible to all audiences.</li>
+        <li>Pages should include internal links and use at least five additional pages.</li>
+        <li>Use headings, layout divisions, and semantic elements.</li>
+        <li>Design should be search-engine friendly.</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Our Activities</h2>
-    <ul>
-      <li>Food Bank Sorting</li>
-      <li>Park Clean-Ups</li>
-      <li>Fundraising for Local Shelters</li>
-      <li>Holiday Gift Wrapping</li>
-    </ul>
-    <img src="activity-photo.jpg" alt="Students cleaning up a park">
-  </section>
+    <section class="category" id="images">
+      <h2>Images</h2>
+      <ul>
+        <li>At least one image or graphic on every page, optimized for web with captions and alt text.</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Watch Our Video</h2>
-    <iframe 
-      src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-      title="Volunteer Recap Video" 
-      frameborder="0" 
-      allowfullscreen>
-    </iframe>
-  </section>
+    <section class="category" id="lists">
+      <h2>Lists</h2>
+      <ul>
+        <li>At least one list, styled with CSS classes and organized clearly.</li>
+        <li>Use classes to style and improve readability and appearance.</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Volunteer Hours Table</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Hours This Month</th>
-          <th>Total Hours</th>
-          <th>Favorite Activity</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Alex Kim</td>
-          <td>12</td>
-          <td>45</td>
-          <td>Food Bank</td>
-        </tr>
-        <tr>
-          <td>Jordan Lee</td>
-          <td>15</td>
-          <td>60</td>
-          <td>Park Clean-Up</td>
-        </tr>
-        <tr>
-          <td>Riya Patel</td>
-          <td>10</td>
-          <td>38</td>
-          <td>Holiday Wrapping</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+    <section class="category" id="tables">
+      <h2>Tables</h2>
+      <table>
+        <caption>Example Table</caption>
+        <thead>
+          <tr>
+            <th>Page</th>
+            <th>Requirement</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Images</td>
+            <td>1 image per page with alt + caption</td>
+          </tr>
+          <tr>
+            <td>Lists</td>
+            <td>Use simple, styled lists with headings</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-  <section>
-    <h2>Contact Us</h2>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
+    <section class="category" id="forms">
+      <h2>Forms</h2>
+      <form>
+        <label for="email">Subscribe:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br>
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" placeholder="Your feedback..."></textarea>
+        <br>
+        <button type="submit">Send</button>
+      </form>
+    </section>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+    <section class="category" id="links">
+      <h2>Links</h2>
+      <ul>
+        <li><a href="page2.html">Internal Link Example</a></li>
+        <li><a href="https://www.example.com" target="_blank" rel="noopener">External Link Example</a></li>
+      </ul>
+    </section>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
+    <section class="category" id="multimedia">
+      <h2>Multimedia</h2>
+      <video controls width="300">
+        <source src="media/sample.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+  </main>
 
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
+  <footer>
+    <p>Make sure to include all requirements and upload your project to GitHub before submitting.</p>
+  </footer>
 </body>
 </html>
