@@ -1,63 +1,58 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background: #f7f9fa;
+  font-family: Arial, sans-serif;
+  background-color: #f9fbfd;
   color: #333;
-  line-height: 1.6;
 }
 
 header {
-  background: #005b8f;
+  background-color: #004080;
   color: white;
+  text-align: center;
   padding: 1rem;
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
   text-align: center;
+  padding: 1rem;
+  background-color: #e6f2ff;
 }
 
-.audience-grid {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-}
-
-figure {
-  width: 200px;
-  margin: 1rem;
-  text-align: center;
-}
-
-figure img {
-  width: 100%;
+.hero img {
+  max-width: 100%;
+  height: auto;
   border-radius: 8px;
 }
 
 main {
-  padding: 1rem 2rem;
+  padding: 1.5rem;
 }
 
-.category {
-  background: #ffffff;
-  border-left: 5px solid #005b8f;
-  margin: 1rem 0;
-  padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.features ul {
+  list-style: disc;
+  padding-left: 1.5rem;
 }
 
-.category h2 {
-  color: #005b8f;
-}
-
-ul {
-  list-style-type: disc;
-  padding-left: 2rem;
-}
-
-table {
+.table-section table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
-  background: #f4f9ff;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
 table, th, td {
@@ -65,43 +60,52 @@ table, th, td {
 }
 
 th, td {
-  padding: 0.75rem;
-  text-align: left;
+  padding: 0.8rem;
+  text-align: center;
 }
 
-caption {
-  caption-side: top;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+.form-section {
+  margin-top: 2rem;
+  background-color: #eef7ff;
+  padding: 1rem;
+  border-radius: 8px;
 }
 
 form {
-  background: #eef6fb;
-  padding: 1rem;
-  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
-form input, form textarea {
-  width: 100%;
+form label {
+  margin: 0.5rem 0 0.2rem;
+}
+
+form input {
   padding: 0.5rem;
-  margin: 0.5rem 0;
+  margin-bottom: 1rem;
 }
 
-button {
-  background: #005b8f;
+form button {
+  padding: 0.6rem;
+  background-color: #004080;
   color: white;
-  padding: 0.5rem 1rem;
   border: none;
   cursor: pointer;
 }
 
-button:hover {
-  background: #003e63;
+form button:hover {
+  background-color: #003060;
+}
+
+.video {
+  margin-top: 2rem;
+  text-align: center;
 }
 
 footer {
   text-align: center;
   padding: 1rem;
-  background: #005b8f;
+  background-color: #004080;
   color: white;
+  margin-top: 2rem;
 }
