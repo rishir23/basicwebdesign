@@ -36,6 +36,7 @@ header nav a:hover {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
 main {
@@ -45,6 +46,14 @@ main {
 .features ul {
   list-style: disc;
   padding-left: 1.5rem;
+}
+
+.features img {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
 }
 
 .table-section table {
